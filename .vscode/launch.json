@@ -9,6 +9,16 @@
             "mainClass": "com.astar.products.ProductsApplication",
             "projectName": "products",
             "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-HellospringwebApplication<hellospringweb>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.astar.HellospringwebApplication",
+            "projectName": "hellospringweb",
+            "args": ""
         }
     ]
 }
