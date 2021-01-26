@@ -1,0 +1,27 @@
+version: '3'
+services:
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: rootroot
+      MYSQL_USER: root
+    ports:
+     - "3306:3306"
+    volumes:
+      - "./scripts/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+  rabbitmq:
+        image: rabbitmq:3-management-alpine
+        ports:
+            - 5672:5672
+            - 15672:15672
+  backend:
+    build: .
+    restart: always
+    ports: 
+      - "3000:3000"
+    environment:
+      DB_HOST: db
+    depends_on:
+      - db
+      - rabbitmq
