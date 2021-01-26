@@ -20,7 +20,7 @@ public class HelloController {
 
 	@GetMapping("hellobyname")
 	public String sayHelloByName(
-			@RequestParam(name = "name", defaultValue = "Collabera", required = false) String myname) {
+			@RequestParam(name = "name", defaultValue = "Singapore!", required = false) String myname) {
 		return "Hello " + myname;
 	}
 
