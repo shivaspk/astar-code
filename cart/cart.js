@@ -8,7 +8,7 @@ var router = express.Router()
 var amqp = require('amqplib/callback_api');
 const DB_HOST = process.env.DB_HOST || 'db';
 const DB_SCHEMA = process.env.DB_SCHEMA || 'cartsdb';
-const DB_USER = process.env.DB_USER || 'root';
+const DB_USER = process.env.DB_USER || 'mycartuser';
 const DB_PWD = process.env.DB_PWD || 'rootroot';
 
 const db_config = {
