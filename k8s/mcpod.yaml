@@ -4,6 +4,8 @@ metadata:
   name: mcpod
   labels:
     name: mcpod
+    app: nginx
+    app1: hello
 spec:
   containers:
   - name: mynginx
