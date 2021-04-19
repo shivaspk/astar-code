@@ -3,7 +3,6 @@
 /.vscode
 /node_modules
 /bin
-k8s/pod.yaml
 .gitignore
 .gitignore
 Orders/Orders/obj/Debug/net5.0/Orders.GeneratedMSBuildEditorConfig.editorconfig
