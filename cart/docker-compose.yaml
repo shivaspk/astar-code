@@ -15,6 +15,10 @@ services:
         ports:
             - 5672:5672
             - 15672:15672
+  rabbitmq-client:
+    image: shivaspk/rabbitclient
+    depends_on:
+      - rabbitmq
   backend:
     build: .
     restart: always
