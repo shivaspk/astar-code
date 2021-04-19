@@ -3,3 +3,11 @@
 /.vscode
 /node_modules
 /bin
+k8s/pod.yaml
+.gitignore
+.gitignore
+Orders/Orders/obj/Debug/net5.0/Orders.GeneratedMSBuildEditorConfig.editorconfig
+Orders/Orders/obj/Debug/net5.0/Orders.AssemblyInfo.cs
+.gitignore
+Orders/Orders/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+.gitignore
