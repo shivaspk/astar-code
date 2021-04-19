@@ -10,7 +10,7 @@ COPY package*.json ./
 ENV DB_HOST="localhost"
 ENV DB_PORT=3306
 ENV DB_SCHEMA="cartsdb"
-ENV DB_USER="root"
+ENV DB_USER="mycartuser"
 ENV DB_PWD="rootroot"
 
 RUN npm install
