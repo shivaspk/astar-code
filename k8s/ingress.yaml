@@ -15,3 +15,10 @@ spec:
                 name: hello-v1
                 port:
                   number: 80
+          - path: /hello/v2
+            pathType: Prefix
+            backend:
+              service:
+                name: hello-v2
+                port:
+                  number: 80
